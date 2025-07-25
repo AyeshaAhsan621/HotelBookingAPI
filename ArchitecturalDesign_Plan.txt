@@ -1,0 +1,38 @@
+Architectural Diagram
++------------------------+
+|   ASP.NET Core Web API |
++------------------------+
+           |
+           v
++------------------------+
+|      Controllers       |
+|  (Hotel, Room, Booking)|
++------------------------+
+           |
+           v
++------------------------+
+|        Services        |
+| (HotelService, etc.)   |
++------------------------+
+           |
+           v
++------------------------+
+|     EF Core DbContext  |
+|   (AppDbContext.cs)    |
++------------------------+
+           |
+           v
++------------------------+
+|     SQLLite Database  |
++------------------------+
+
+
+Entity Relationship Diagram (ERD)
+Hotel (1) ────< Room (1) ────< Booking
+  ↑             ↑              ↑
+  |             |              |
+ Name        RoomNumber     BookingRef
+ Address     RoomType       StartDate
+             Capacity       EndDate
+                            GuestCount
+
