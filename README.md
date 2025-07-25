@@ -11,7 +11,7 @@ This API follows a layered architecture:
 - **Presentation Layer**: ASP.NET Core Controllers
 - **Business Logic Layer**: Services and Validation
 - **Data Access Layer**: EF Core Repositories
-- **Database**: SQL Server (local or cloud-hosted)
+- **Database**: SQL Server Lite
 
 ---
 
@@ -22,7 +22,7 @@ This API follows a layered architecture:
 > This diagram illustrates the relationships between `Customer`, `Booking`, and `Room` entities.
 > 
 ![Design and Plan ](ArchitecturalDesign_Plan.txt)
-
+> This has the ERD and the Architectural Design
 
 ---
 
@@ -79,7 +79,7 @@ Room Endpoints
 ### 🔧 Prerequisites
 
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
-- SQL Server or LocalDB
+- SQL Server Lite 
 - Visual Studio or VS Code
 
 ### 📦 Installation
